@@ -15,4 +15,10 @@ export class ListaAddComponent implements OnInit {
   ngOnInit() {
   }
 
+  agregar()
+  {
+    this.servicio.agregarItem(this.item);
+    this.item.name='';
+  }
+
 }
